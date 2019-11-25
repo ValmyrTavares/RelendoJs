@@ -18,13 +18,25 @@ console.log(altura);
 console.log(gordura);
 console.log(IMC);
 
+var EhPesoValido = true;
+var EhAlturaValida = true;
+
+
 if (peso < 20 || peso > 200) {
     console.log("Peso inválido")
+    EhPesoValido = false;
 } else {
     console.log("Peso Valido")
 }
-if (altura < 1 || peso > 3) {
+if (altura < 1 || altura > 3) {
     console.log("Altura inválida")
+    EhAlturaValida = false;
 } else {
     console.log("Altura Válida")
+}
+
+if (EhPesoValido && EhAlturaValida) {
+    tdImc.textContent = IMC
+} else {
+    tdImc.textContent = "IMC inválido"
 }
