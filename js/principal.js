@@ -17,3 +17,14 @@ console.log(peso);
 console.log(altura);
 console.log(gordura);
 console.log(IMC);
+
+if (peso < 20 || peso > 200) {
+    console.log("Peso inválido")
+} else {
+    console.log("Peso Valido")
+}
+if (altura < 1 || peso > 3) {
+    console.log("Altura inválida")
+} else {
+    console.log("Altura Válida")
+}
