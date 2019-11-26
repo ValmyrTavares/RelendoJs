@@ -1,6 +1,15 @@
 
 //console.log(paciente)
 
+var titulo = document.querySelector(".titulo")
+console.log(titulo)
+
+titulo.addEventListener("click", mostraMensagem)
+
+function mostraMensagem() {
+    console.log("Deu certo");
+}
+
 var pacientes = document.querySelectorAll(".paciente")
 for (var i = 0; i <= pacientes.length; i++) {
 
@@ -47,3 +56,4 @@ for (var i = 0; i <= pacientes.length; i++) {
         tdImc.textContent = "IMC inválido"
     }
 }
+
