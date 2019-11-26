@@ -7,7 +7,7 @@ var botaoAdicionar = document.querySelector("#adicionar-paciente")
 botaoAdicionar.addEventListener("click", mostraMensagem)
 
 function mostraMensagem() {
-    debugger
+
     event.preventDefault();
     var form = document.querySelector("#form-adiciona");
 
@@ -22,6 +22,18 @@ function mostraMensagem() {
     console.log(altura);
 
     var pacienteTr = document.createElement("tr")
+
+    var nomeTd = document.createElement("td");
+    var pesoTd = document.createElement("td");
+    var gorduraTd = document.createElement("td");
+    var alturaTd = document.createElement("td");
+    var ImcTd = document.createElement("td");
+
+    nomeTd.textContent = nome;
+    pesoTd.textContent = peso;
+    gordura.textContent = gordura;
+    alturaTd.textContent = altura;
+
 
 
 }
