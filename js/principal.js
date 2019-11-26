@@ -21,6 +21,8 @@ function mostraMensagem() {
     console.log(gordura);
     console.log(altura);
 
+
+
     var pacienteTr = document.createElement("tr")
 
     var nomeTd = document.createElement("td");
@@ -31,8 +33,16 @@ function mostraMensagem() {
 
     nomeTd.textContent = nome;
     pesoTd.textContent = peso;
-    gordura.textContent = gordura;
+    gorduraTd.textContent = gordura;
     alturaTd.textContent = altura;
+
+    pacienteTr.appendChild(nomeTd);
+    pacienteTr.appendChild(pesoTd);
+    pacienteTr.appendChild(gorduraTd);
+    pacienteTr.appendChild(alturaTd);
+
+    var tabela = document.querySelector("#tabela-pacientes")
+    tabela.appendChild(pacienteTr)
 
 
 
