@@ -1,19 +1,21 @@
 
 //console.log(paciente)
 
-var titulo = document.querySelector(".titulo")
-console.log(titulo)
+var botaoAdicionar = document.querySelector("#adicionar-paciente")
 
-titulo.addEventListener("click", mostraMensagem)
+
+botaoAdicionar.addEventListener("click", mostraMensagem)
 
 function mostraMensagem() {
+    event.preventDefault();
     console.log("Deu certo");
 }
 
 var pacientes = document.querySelectorAll(".paciente")
 for (var i = 0; i <= pacientes.length; i++) {
 
-    paciente = pacientes[i]
+    paciente = pacientes[i];
+    console.log(paciente)
 
     var tdNome = paciente.querySelector(".info-nome");
     var tdPeso = paciente.querySelector(".info-peso");
