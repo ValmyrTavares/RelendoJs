@@ -29,12 +29,14 @@ for (var i = 0; i <= pacientes.length; i++) {
     if (peso < 20 || peso > 200) {
         console.log("Peso inválido")
         EhPesoValido = false;
+        paciente.style.color = "red"
     } else {
         console.log("Peso Valido")
     }
     if (altura < 1 || altura > 3) {
         console.log("Altura inválida")
         EhAlturaValida = false;
+        paciente.style.color = "red";
     } else {
         console.log("Altura Válida")
     }
