@@ -40,7 +40,7 @@ for (var i = 0; i <= pacientes.length; i++) {
     }
 
     if (EhPesoValido && EhAlturaValida) {
-        tdImc.textContent = IMC
+        tdImc.textContent = IMC.toFixed(2)
     } else {
         tdImc.textContent = "IMC inválido"
     }
