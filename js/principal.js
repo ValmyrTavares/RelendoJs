@@ -21,6 +21,10 @@ console.log(IMC);
 var EhPesoValido = true;
 var EhAlturaValida = true;
 
+var pacientes = document.querySelectorAll(".paciente")
+for (var i = 0; i <= pacientes.length; i++) {
+    console.log(pacientes[i])
+}
 
 if (peso < 20 || peso > 200) {
     console.log("Peso inválido")
