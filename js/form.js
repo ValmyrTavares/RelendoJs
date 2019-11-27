@@ -14,12 +14,6 @@ function mostraMensagem() {
     console.log(paciente)
 
 
-    console.log(nome);
-    console.log(peso);
-    console.log(gordura);
-    console.log(altura);
-    console.log(imc);
-
 
 
     var pacienteTr = document.createElement("tr")
@@ -52,6 +46,7 @@ function obtemPacienteFormulario(form) {
         peso: form.peso.value,
         gordura: form.gordura.value,
         altura: form.altura.value,
+        imc: calculaImc(form.peso.value, form.altura.value)
     }
     return paciente
 }
