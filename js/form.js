@@ -10,12 +10,9 @@ function mostraMensagem() {
 
 
     var form = document.querySelector("#form-adiciona");
+    var paciente = obtemPacienteFormulario(form)
+    console.log(paciente)
 
-    var nome = form.nome.value
-    var peso = form.peso.value;
-    var gordura = form.gordura.value;
-    var altura = form.altura.value;
-    var imc = calculaImc(peso, altura);
 
     console.log(nome);
     console.log(peso);
@@ -47,7 +44,14 @@ function mostraMensagem() {
 
     var tabela = document.querySelector("#tabela-pacientes")
     tabela.appendChild(pacienteTr)
+}
 
-
-
+function obtemPacienteFormulario(form) {
+    var paciente = {
+        nome: form.nome.value,
+        peso: form.peso.value,
+        gordura: form.gordura.value,
+        altura: form.altura.value,
+    }
+    return paciente
 }
